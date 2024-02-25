@@ -13,13 +13,10 @@ body{
 
 }
 .design{
+  top: -15%;
   position: absolute;
   opacity: 0.5;
   z-index: -1;
-  
-}
-.design-1{
-  top: -15%;
 }
 
 .design:hover{
@@ -198,7 +195,7 @@ nav a {
   grid-template-columns: 25% 5% 5% 25% 5% 15% 10% 10%;
   grid-template-rows: 5% 20% 5% 10% 15% 5% 30% 5% 5%;
   background-color:#24261C;
-  height: 80vh;
+  height: 80%;
 }
 #img-gallery > div:hover{
   animation: up 0.2s ease-in-out forwards;
@@ -263,10 +260,7 @@ footer h3{
 }
 #footer-flex p{
   color: rgb(228, 225, 225);
-  font-family:  "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  font-size: 1.2em;
 
 }
 
@@ -361,8 +355,196 @@ li{
 @keyframes up{
   to{transform: translateY(-10%);}
 }
+@media only screen and (max-width: 600px){
+  .name{
+    font-family:  "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #8B6B30;
+    margin: 10% 0 2% 0; 
+  }
+  .tagLine{
+    font-family:  "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #210169;
+    font-size: 1em;
+  }
+  .container-1{
+    display: block;
+    margin-top: 3%;
+  } 
+  #profile-img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0;
+    
+  }
+  #profile-img > img{
+    width: 50%;
+    border-radius: 20%;
+    padding: 0 0 0 0 ;
+    
+  }
+  #message-main {
+    width: 100%;
 
-@media only screen and (max-width: 800px){
+  }
+  #message-main > h3{
+    text-align: center;
+    margin-bottom: 2%;
+    font-size:3rem;
+    font-family: "Hedvig Letters Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    animation: bounce 1.5s infinite;
+    color: #9a7f4d;
+    padding: 0;
+    
+  }
+  
+  #message-main > p{
+    text-align: center;
+    font-family: "Hedvig Letters Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 20;
+    font-style: normal;
+    font-size: 1.4rem;
+    color: #7c6e55;
+    padding: 2%;
+  
+  }
+  #bg-img{
+    display: block;
+    text-align: center;
+    align-items: stretch; 
+    box-sizing: border-box; 
+    margin-top: 7%;
+  }
+  #bg-img h4{
+    margin: 3% 3% auto 3%;
+    font-family: "Hedvig Letters Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 20;
+    font-style: normal;
+    font-size: 1rem;
+   
+   
+  }
+  #bg-img > div {
+    background-color:#e7dede;
+    border-radius: 5%;
+    margin: 0 2% 0 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+    color: #9a7f4d;
+    opacity: 0.9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+   
+  }
+  #bg-img  img{
+    height: 30%;
+    width: 50%;
+    border-radius: 5%;
+    object-fit: cover;
+    
+  }
+  #img-gallery{
+    display: grid;
+    grid-template-columns: 50% ;
+    grid-template-rows: 10% 10% 10% 10% 10%;
+    background-color:#24261C;
+    height: 100%;
+  }
+  .grid-5{grid-row: 1 / 5;grid-column: 1 / 5;
+    background: url("images/19E635E5-3277-4F22-B02E-C61DD8C3A377.JPG" ) no-repeat;
+    background-position: top;
+    background-size: 110%;}
+  .grid-2{grid-row: 1 / 4;grid-column: 5 / 10;
+    background: url("images/IMG_0452.JPG" ) no-repeat;
+    background-position: center;
+    background-size: 110%;}
+  .grid-9{grid-row: 4 / 7;grid-column: 5 / 10; 
+      border-top-left-radius: 0;border-top-right-radius: 0;
+      background: url("images/IMG_0655.PNG" ) no-repeat;
+      background-position: bottom;
+      background-size: 110%;} 
+  .grid-10{grid-row: 5 / 9;grid-column: 1 / 5;
+      background: url("images/IMG_8421\ 2.JPG" ) no-repeat;
+      background-position: center;
+      background-size: 110%;}
+  .grid-13{grid-row: 7/ 9;grid-column: 5/ 10 ;
+      background: url("images/IMG_7069\ 2.JPG" ) no-repeat;
+      background-position: 70%;
+      background-size: 110%;}
+  footer .footer-right{
+    display: none;
+  }
+  .footer-left > h2{
+    font-family:  "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    
+  }
+  
+  .qoute-div  h2{
+    font-family:  "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  #likes-grid{
+    display: block;
+    align-items: stretch; 
+    box-sizing: border-box; 
+    margin-top: 3%;
+    
+  }
+  #likes-grid > div{
+    background-color: #A59986;
+    padding: 4%;
+    text-align: left;
+    box-sizing: border-box; 
+    color: #FFFF;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2%;
+  }
+  #likes-grid h3{
+    font-size: 1.5rem;
+    color:#8B6B30 ;
+  }
+  .likes-tagLine{
+    padding-bottom: 3%;
+    color:#210169;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+  }
+  img.design{
+    display: none;
+  }
+  
+
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px){
   .name{
     font-family:  "Cinzel", serif;
     font-optical-sizing: auto;
@@ -546,6 +728,9 @@ li{
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
+  }
+  img.design{
+    display: none;
   }
   
 
